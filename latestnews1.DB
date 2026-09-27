@@ -1,0 +1,35 @@
+﻿SELECT DB_NAME();
+USE SarkariManzilDB;
+GO
+
+SELECT name FROM sys.tables;
+USE SarkariManzilDB;
+GO
+
+CREATE TABLE dbo.LatestNews
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    Title NVARCHAR(200) NOT NULL,
+    ShortDesc NVARCHAR(500) NOT NULL,
+    FullNews NVARCHAR(MAX) NOT NULL,
+    CreatedDate DATETIME NOT NULL DEFAULT GETDATE()
+);
+USE SarkariManzilDB;
+GO
+SELECT * FROM dbo.LatestNews;
+USE SarkariManzilDB;
+GO
+SELECT name FROM sys.tables WHERE name = 'LatestNews';
+SELECT * FROM dbo.LatestNews;
+INSERT INTO dbo.LatestNews (Title, ShortDesc, FullNews)
+VALUES
+(
+ N'Govt Exam Update',
+ N'New exam date announced',
+ N'Government has officially announced the new exam date. Candidates are advised to check the official notification.'
+);
+SELECT * FROM dbo.LatestNews;
+
+USE SarkariManzilDB;
+SELECT * FROM LatestNews;
+

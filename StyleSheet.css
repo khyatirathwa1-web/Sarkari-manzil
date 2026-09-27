@@ -1,0 +1,55 @@
+﻿body {
+    font-family: Arial;
+    background: #f6f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #4B79A1;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.menu a, .menu asp:Button {
+    background: #4B79A1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    background: #35516a;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.back-btn {
+    margin-top: 25px;
+    display: inline-block;
+    background: #666;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
